@@ -1,0 +1,241 @@
+/*
+font-family: 'Philosopher', sans-serif; // курсив для списков 400 italic
+font-family: 'Sulphur Point', sans-serif; //заголовок и основной 400
+*/
+
+
+html, body, p, button, input {
+    font: 400 30px 'Sulphur Point', sans-serif;
+}
+
+/*класс для шрифта курсивного (списки)*/
+.p_italic {
+    font: 400 20px 'Philosopher', sans-serif;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.p_title {
+    color: #DB7093;
+    font-size: 40px;
+}
+
+.p_small {
+    font-size: 20px;
+    color: #696969;
+    font-style: italic;
+}
+
+i {
+    color: #DB7093;
+    cursor: pointer;
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+
+*:hover {
+	transition: 0.4s ease-out;
+}
+
+.container {
+	max-width: 1900px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+/* кнопки*/
+button {
+    padding: 8px 15px 5px;
+    color: #fff;
+    background-color: #DB7093;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(219, 112, 147, .7);
+}
+
+/*....................................................
+
+                SECTION 1 - HEADER
+
+...................................................*/
+
+.content_header {
+    display: flex;
+    flex-direction: column;
+}
+
+/* заголовок*/
+.main_title h1{
+    font: 700 100px 'Sulphur Point', sans-serif;
+    padding: 50px 0;
+    color: #DB7093;
+    text-shadow: #DB7093 2px 0 10px;
+}
+
+/* инпуты*/
+.project_input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.project_input_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.project_input_item p {
+    margin-right: 20px;
+}
+
+input {
+    width: 300px;
+
+    font-size: 20px;
+    font-style: italic;
+    padding: 10px 0 10px 15px;
+
+    border-radius: 10px;
+    border: 1px solid #C0C0C0;
+}
+
+
+input:focus,
+input:hover {
+    outline: none;
+    border: 1px solid #DB7093;
+}
+
+/*....................................................
+
+                SECTION 2 - LISTS
+
+...................................................*/
+/* content_lists */
+.content_lists {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Lists*/
+.project_column {
+    display: flex;
+    flex-direction: column;
+
+    width: 30%;
+}
+
+.project_list_title {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+
+    background-color: rgba(211, 211, 211, .5);
+    border-radius: 20px;
+}
+
+.project_list_title div{
+    margin: 20px 0 10px;;
+}
+
+.project_list_body {
+    border: 2px solid rgba(211, 211, 211, .5);
+    border-radius: 20px;
+
+    margin-bottom: 20px;
+}
+
+.project_tasks,
+.progress_tasks,
+.done_tasks {
+    margin: 20px 0 20px 10px;
+    overflow: auto;
+    height: 200px;
+}
+
+.string_todo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 2px solid rgba(211, 211, 211, .5);
+}
+
+.string_todo_dateicons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.string_todo_dateicons p.p_italic {
+    color: #696969;
+}
+
+/*....................................................
+
+                SECTION 3 - MODAL
+
+...................................................*/
+
+.modal_back_sure,
+.modal_back_enter,
+.modal_back_five {
+    display: none;
+    position: fixed;
+    z-index: 100;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(211, 211, 211, .8);
+}
+
+.modal_window {
+    background-color: #FFF;
+    border-radius: 20px;
+
+    text-align: center;
+    width: 30%;
+    margin: 20% auto;
+}
+
+.modal_text {
+    padding: 20px 10px 50px;
+}
+
+.modal_buttons {
+    padding: 0 20px 20px 20px;
+    text-align: end;
+}
+
+.modal_buttons button:first-child {
+    width: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+

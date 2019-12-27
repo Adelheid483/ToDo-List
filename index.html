@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- Подключение шрифтов --> 
+    <link href="https://fonts.googleapis.com/css?family=Philosopher:400i|Sulphur+Point:400,700&display=swap" rel="stylesheet">
+    
+    <!-- Подключение иконок --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <!-- Сброс -->
+    <link rel="stylesheet" href="css/reset.css">
+
+    <!-- Мои стили -->
+    <link rel="stylesheet" href="css/main.css">
+        
+    <title>My ToDo List</title>    
+    
+</head>
+
+
+<body>
+
+<!-- ....................................................
+
+                SECTION 1 - HEADER
+
+................................................... -->
+
+<div class="project_header">
+    <div class="container">
+        <div class="content_header">
+
+            <div class="main_title">
+                <h1>My ToDo List</h1>
+            </div>
+            
+            <div class="project_input">
+                <div class="project_input_item">        
+                    <div>
+                        <p>Enter your task:</p>
+                    </div>                    
+                    <div>
+                        <input type="text" autofocus>
+                    </div>
+                </div>
+                
+                <div class="project_input_item">               
+                    <div>
+                        <p>Enter date of DeadLine:</p>
+                    </div>
+                    <div>
+                        <input type="date" min="2019-12-20" autocomplete="">
+                    </div>
+                </div>   
+                     
+                <div class="project_input_item">               
+                    <div class="input_button">
+                        <button id="add_id">Add Task</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+           
+           
+ <!-- ....................................................
+
+                SECTION 2 - LISTS
+
+................................................... -->                
+
+ <div class="project_lists">
+    <div class="container">
+        <div class="content_lists"> 
+              
+ <!-- project_todo -->                              
+         <div class="project_column">
+                <div class="progect_list">
+                   
+                    <div class="project_list_title">
+                        <div>
+                            <p class="p_title">ToDo List</p>
+                            <p class="p_small">Total Tasks: 0</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project_list_body">
+                        <div class="project_tasks">
+                            <!--Сюда добавляется список дел-->
+                        </div>
+                    </div>
+                    
+                    <div class="project_button_clear">
+                        <button>Clear All</button>
+                    </div>
+                </div>
+            </div>
+     
+<!-- project_progress -->            
+        <div class="project_column">
+                <div class="progect_list">
+                   
+                    <div class="project_list_title">
+                        <div>
+                            <p class="p_title">In Progress</p>
+                            <p class="p_small">Total Tasks: 0</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project_list_body">
+                        <div class="progress_tasks">
+                            <!--Сюда ПЕРЕНОСИТСЯ список ТЕКУЩИХ дел-->
+                        </div>
+                    </div>
+                    
+                    <div class="project_button_clear">
+                        <button>Clear All</button>
+                    </div>
+                </div>
+         </div>
+
+<!-- project_done -->            
+         <div class="project_column">
+                <div class="progect_list">
+                   
+                    <div class="project_list_title">
+                        <div>
+                            <p class="p_title">Done!</p>
+                            <p class="p_small">Total Tasks: 0</p>
+                        </div>
+                    </div>
+                    
+                    <div class="project_list_body">
+                        <div class="done_tasks">
+                            <!--Сюда ПЕРЕНОСИТСЯ список ВЫПОЛНЕННЫХ дел-->
+                        </div>
+                    </div>
+                    
+                    <div class="project_button_clear">
+                        <button>Clear All</button>
+                    </div>
+                </div>
+         </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- ....................................................
+
+                SECTION 3 - MODAL
+
+................................................... -->
+
+
+<div class="modal_back_sure">
+    <div class="modal_window">
+        <div class="modal_text">
+            <p>Are you sure?</p>
+        </div>
+        <div class="modal_buttons">
+            <button>Yes</button>
+            <button>Cancel</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal_back_enter">
+    <div class="modal_window">
+        <div class="modal_text">
+            <p>Enter your task and date of DeadLine!</p>
+        </div>
+        <div class="modal_buttons">
+            <button>Оk</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal_back_five">
+    <div class="modal_window">
+        <div class="modal_text">
+            <p>Six tasks is too much for ordinary human ;)</p>
+        </div>
+        <div class="modal_buttons">
+            <button>Ok</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
