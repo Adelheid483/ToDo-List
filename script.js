@@ -1,7 +1,3 @@
-﻿let todoArray = [];
-let progressArray = [];
-let doneArray = [];
-
 // записываю в переменные инпуты
 let inputValue = document.querySelectorAll('input')[0];
 let inputValueDate = document.querySelectorAll('input')[1];
