@@ -1,14 +1,13 @@
-**Проект выполнен в рамках обучения на курсах по специальности Frontend Developer.** <br>
-Проект выполнен на чистом HTML5, CSS3, JavaScript.
+**The project is written in pure HTML5, CSS3, JavaScript.**
 
-## Состоит из трёх списков: 
-  - список задач;
-  - список задач в процессе выполнения;
-  - список выполненных задач.
-  
- ## Также в проекте предусмотрены:
-  - валидация на пустое поле ввода; 
-  - установка крайнего срока выполнения задачи при формировании списка;
-  - возможность удаления задач поштучно, их перенос из списка в список а также подсчёт их общего количества в каждом списке;
-  - в каждом списке предусмотрено единовременное удаление всех задач;
-  - список задач в процессе выполнения ограничен количеством в пять единиц. Присутствует подтверждение удаления задач из этого списка. 
+## Consists of three lists: 
+ - «ToDo» List; 
+ - «In progress» list; 
+ - «Done» list. 
+
+## Also in the project you can find: 
+ - validation on an empty input field; 
+ - setting the deadline for completing the task when forming the list; 
+ - the ability to delete each tasks, moving them from one list to another, and also counting their total number in each list; 
+ - each list provides «Clear All» button; 
+ - «In progress» list is limited to five tasks. There is modal window with confirm of removing of tasks from this list.
